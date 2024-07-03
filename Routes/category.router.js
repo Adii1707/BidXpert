@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 
-import * as CategoryController from '../controller/category.controller.js'; 
+import * as CategoryController from '../Controller/category.controller.js'; 
 
 router.post("/save",CategoryController.save);
 
