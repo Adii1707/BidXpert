@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import uniqueValidator from 'mongoose-unique-validator';
+// import uniqueValidator from 'mongoose-unique-validator';   
 
 const CategorySchema = mongoose.Schema({
   _id: Number,
@@ -18,7 +18,7 @@ const CategorySchema = mongoose.Schema({
 });
 
 // Apply the uniqueValidator plugin to UserSchema.
-CategorySchema.plugin(uniqueValidator);
+// CategorySchema.plugin(uniqueValidator);
 
 // compile schema to model
 const CategorySchemaModel = mongoose.model('category_collection',CategorySchema);

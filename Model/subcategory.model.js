@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import uniqueValidator from 'mongoose-unique-validator';
+// import uniqueValidator from 'mongoose-unique-validator';
 
 const SubCategorySchema = mongoose.Schema({
   _id: Number,
@@ -24,7 +24,7 @@ const SubCategorySchema = mongoose.Schema({
 });
 
 // Apply the uniqueValidator plugin to UserSchema.
-SubCategorySchema.plugin(uniqueValidator);
+// SubCategorySchema.plugin(uniqueValidator);
 
 // compile schema to model
 const SubCategorySchemaModel = mongoose.model('subcategory_collection',SubCategorySchema);

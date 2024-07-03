@@ -37,5 +37,5 @@ app.use("/bid",BidRouter);
 app.use("/student", StudentRouter);
 
 
-app.listen(8081);
+app.listen(process.env.PORT);
 console.log("server invoked at http://localhost:8081");
