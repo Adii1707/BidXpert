@@ -27,6 +27,9 @@ app.use(fileUpload());
   //to allow cross origin request
   app.use(cors());
 
+  app.get('/', (req, res) => {
+    res.send('Welcome to BidXpert World!');
+  });
 
 // user router middleware
 
