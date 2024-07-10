@@ -14,7 +14,7 @@ import fileUpload from 'express-fileupload';
 
 
 const app = express();
-const port = 8081;
+// const port = 8081;
 
 // config to add bodyParser middleware to handle patch , post, and get type request
 
@@ -41,6 +41,8 @@ app.use("/bid",BidRouter);
 app.use("/student", StudentRouter);
 
 // console.log(port);
-app.listen(port);
+app.listen(8081, () => {
+  console.log(`Server is running on port ${8081}`);
+});
 // console.log(process.env.PORT);
-console.log("server invoked at http://localhost:8081");
+// console.log("server invoked at http://localhost:8081");
