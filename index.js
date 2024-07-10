@@ -41,8 +41,10 @@ app.use("/bid",BidRouter);
 app.use("/student", StudentRouter);
 
 // console.log(port);
-app.listen(8081, () => {
-  console.log(`Server is running on port ${8081}`);
+app.listen(3001, () => {
+  console.log(`Server is running on port ${3000}`);
 });
 // console.log(process.env.PORT);
 // console.log("server invoked at http://localhost:8081");
+
+export default app;
