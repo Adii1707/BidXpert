@@ -1,11 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "/index.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/index.js" }
-    ]
-   
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "/Routes/user.router.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/user(.*)",
+      "dest": "/Routes/user.router.js"
+    },
+    {
+      "src": "/product/(.*)",
+      "dest": "Routes/product.router.js"
+    }
+  ]
+}

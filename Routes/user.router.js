@@ -4,7 +4,7 @@ import * as Usercontroller from "../Controller/User.controller.js";
 export const UserRouter = express.Router();
 
 /* User Route to get data */
-UserRouter.get("/fetch", Usercontroller.fetch);
+UserRouter.get("/fetch  ", Usercontroller.fetch);
 
 /* User Route to post data */
 
